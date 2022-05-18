@@ -1,0 +1,181 @@
+body{
+    position: relative;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-image:linear-gradient(rgba(241, 235, 235, 0.05),rgba(241, 235, 235, 0.05)),url(../img/images\ \(1\).jpg);
+    width:90vw;
+    height:90vh;
+    background-size: cover;
+    background-position:center;
+
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    font-size: 45px;
+}
+
+
+.B{
+    
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    width: 99.6vw;
+    height: 18.5vh;
+    margin-left:0.2em;
+}
+
+
+
+.C{
+    width:31.9vw;
+    height: 16.5vh;
+    align-items: center;
+}
+
+img{
+    width: 32.2vw;
+    height:21.9vh ;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+h4{
+    padding-left: 50px;
+}
+p{
+    text-align: center;
+    font-weight: 100px;
+    grid-column-start: span 1;
+}
+.title{
+    padding-left: 140px;
+    font-weight: 800;
+    font-size: larger;
+}
+   
+.p{
+    margin-left: 5em;
+    
+} 
+
+.P{
+    grid-area: P;
+    font-weight: 535;
+}
+.Q{
+    grid-area: Q;
+    margin-left: 2em;
+    text-align: right;
+    font-weight: 535;
+}
+.T{
+    grid-area: T;
+}
+.footer{
+    display: grid;
+    grid-template-areas: "P P P P T T T T T  Q ";
+}
+.R{
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+@media (max-width:768px) {
+    body{
+        position: relative;
+        display:grid;
+        grid-area: header;
+        grid-area: D;
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        background-image:linear-gradient(rgba(241, 235, 235, 0.05),rgba(241, 235, 235, 0.05)),url(../img/images\ \(1\).jpg);
+        width:768px;
+        height:770px;
+        background-size: cover;
+        background-position:center;
+    
+    }
+    
+    .header{
+        /* background-color: aqua; */
+        grid-template-areas:"header header header  ";
+        /* text-align: left; */
+        font-size: 45px;
+        margin-left: 1em;
+    }
+   
+    
+    .B{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap:26px;
+        grid-row-gap: 30px;
+        width: 83.6vw;
+        height: 18.5vh;
+        margin-right:6em;
+        margin-bottom: 0.6em;
+    }
+    
+    
+    
+    .C{
+        
+        width:28.9vw;
+        height: 16.5vh;
+        align-items: center;
+       
+    }
+    
+    img{
+        width: 31.2vw;
+        height:21.9vh ;
+        text-align: center;
+    }
+    
+    h2{
+        text-align: center;
+    }
+    h4{
+        padding-left: 50px;
+    }
+    p{
+        text-align: center;
+        font-weight: 200px;
+        display: flex;
+    }
+    .title{
+        padding-left: 15px;
+        font-weight: 800;
+        font-size: larger;
+        margin-bottom: 3em;
+    }
+       
+    .p{
+        margin-left: 5em;
+        font-weight: 535;
+    } 
+    .Q{
+        
+        font-weight: 535;
+    } 
+    
+    
+    .footer{
+        
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+}
+
+
